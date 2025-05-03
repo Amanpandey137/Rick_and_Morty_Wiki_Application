@@ -1,0 +1,133 @@
+ 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Slide Down Animation */
+  @keyframes slideDown {
+    from { 
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to { 
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slideDown {
+    animation: slideDown 0.5s ease-out;
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Portal Loader Animation */
+  @keyframes portalPulse {
+    0% {
+      box-shadow: 0 0 5px 2px rgba(66, 245, 78, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 15px 5px rgba(66, 245, 78, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 5px 2px rgba(66, 245, 78, 0.4);
+    }
+  }
+  
+  .portal-loader > div {
+    animation: spin 1.5s linear infinite, portalPulse 2s ease-in-out infinite;
+  }
+  
+  .loading-text {
+    animation: fadeIn 1s ease-in infinite alternate;
+  }
+  
+  /* Glow Shadow Effects */
+  .shadow-glow-purple {
+    box-shadow: 0 0 15px 5px rgba(147, 51, 234, 0.3);
+  }
+  
+  .shadow-glow-green {
+    box-shadow: 0 0 15px 5px rgba(34, 197, 94, 0.3);
+  }
+  
+  .shadow-glow {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Character Card Hover Animation */
+  @keyframes cardHover {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      transform: translateY(-5px) scale(1.05);
+    }
+  }
+  
+  /* Additional Animation Classes */
+  .animate-bounce {
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .animate-pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Button Press Animation */
+  @keyframes press {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button:active:not(:disabled) {
+    animation: press 0.2s ease-in-out forwards;
+  }
